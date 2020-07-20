@@ -1,0 +1,44 @@
+.card{
+    background:black;
+    border-radius: 10px;
+    color:white;
+    margin-top:100px;
+}
+
+.btn_1r{
+    border: none;
+  color: #fff;
+  background: #3f9fff;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 30px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-left: 34px;
+  width: 153px;
+}
+.im{
+  width:30px
+}
+
+.box_grid{
+  max-width: 337px;
+  min-width: 341px;
+  max-height: 540px;
+ min-height: 540px;
+
+}

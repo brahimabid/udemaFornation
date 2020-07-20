@@ -1,0 +1,68 @@
+
+<div class="container" style="background-color: rebeccapurple;padding-top: 80px;">
+    <div class="row">
+
+   <div class="col-md-8" style="margin-top: 20px;
+   margin-bottom: 309px;
+">
+    <h3>Formation EN : {{cours.titre}}</h3>
+    <iframe width="420" height="515px!important" style="width:420;max-height:515px!important;min-height:515px!important" allowfullscreen="allowfullscreen"
+[src]="src">
+</iframe>
+   </div>
+   
+   
+
+   <div class="col-md-4 " style="">
+    <section id="lessons">
+        <div class="intro_title">
+            <h2>Lessons</h2>
+            <ul>
+                <li>{{nbrvideo}} &nbsp; lessons</li>
+                <li>01:02:10</li>
+            </ul>
+        </div>
+        <div id="accordion_lessons" role="tablist" class="add_bottom_45">
+            <mat-accordion>
+
+                <mat-expansion-panel *ngFor="let c of tabChap" (opened)="panelOpenState = true"
+                    (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{c.titre}}
+                        </mat-panel-title>
+                        
+                    </mat-expansion-panel-header>
+                    <div *ngFor="let v of c.video ">
+
+                        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion_lessons">
+                            <div class="card-body">
+                                <div class="list_lessons">
+                                    <ul>
+                                        <li><a (click)="change(v.url)" class="video">{{v.titre}}</a><span>00:59</span></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+           
+
+            
+          
+            <!-- /card -->
+        </div>
+        <!-- /accordion -->
+    </section>
+
+
+
+
+    
+
+
+    </div>
+</div>
